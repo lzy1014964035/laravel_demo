@@ -45,3 +45,5 @@ Route::get('/redis_ceshi', function () {
 Route::get('/redis_ceshi_html', function () {
     return view('redis');
 });
+
+
