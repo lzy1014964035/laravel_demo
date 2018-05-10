@@ -25,7 +25,6 @@ Route::get('/redis_ceshi', function () {
     $goodsId = 123231;
     $maxNumber = 15;
     $userID = $_GET['id'];
-    $a = 1;
 
     if (Redis::get('goods:' . $goodsId . ':try') === 'false') {
         return false;
